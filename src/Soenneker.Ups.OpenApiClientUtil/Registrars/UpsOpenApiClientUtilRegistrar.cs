@@ -6,7 +6,7 @@ using Soenneker.Ups.OpenApiClientUtil.Abstract;
 namespace Soenneker.Ups.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers UPS OpenAPI client providers backed by authenticated transport.
 /// </summary>
 public static class UpsOpenApiClientUtilRegistrar
 {

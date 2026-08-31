@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Ups.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached UPS OpenAPI client backed by authenticated transport.
 /// </summary>
-public interface IUpsOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface IUpsOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the client, creating it on first use.
     /// </summary>
-    /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <param name="cancellationToken">The token used to cancel client creation.</param>
+    /// <returns>The cached client.</returns>
     ValueTask<UpsOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
