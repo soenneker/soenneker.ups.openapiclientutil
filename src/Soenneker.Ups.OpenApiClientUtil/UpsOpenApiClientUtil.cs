@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Ups.OpenApiClientUtil;
 
+/// <inheritdoc cref="IUpsOpenApiClientUtil" />
 public sealed class UpsOpenApiClientUtil : IUpsOpenApiClientUtil
 {
     private readonly AsyncSingleton<UpsOpenApiClient> _client;
