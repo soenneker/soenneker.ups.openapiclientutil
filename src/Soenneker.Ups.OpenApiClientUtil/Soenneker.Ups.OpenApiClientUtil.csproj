@@ -42,6 +42,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Ups.HttpClients" Version="4.0.106" />
-        <PackageReference Include="Soenneker.Ups.OpenApiClient" Version="4.0.94" />
+        <PackageReference Include="Soenneker.Ups.OpenApiClient" Version="4.0.95" />
     </ItemGroup>
 </Project>
